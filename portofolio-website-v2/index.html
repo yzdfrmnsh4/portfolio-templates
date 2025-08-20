@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website template - Modern minimalist design">
+    <meta name="keywords" content="portfolio, professional, designer, developer, minimalist">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Your Name</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Your Name</h1>
+                <p class="hero-subtitle">Creative Professional & Problem Solver</p>
+                <p class="hero-description">Crafting exceptional digital experiences through thoughtful design and innovative solutions.</p>
+                <a href="#portfolio" class="cta-button">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        I'm a passionate creative professional with over 5 years of experience in digital design and development. 
+                        My approach combines strategic thinking with aesthetic sensibility to create meaningful and impactful work.
+                    </p>
+                    <p class="about-description">
+                        I believe in the power of simplicity and the importance of user-centered design. Every project is an 
+                        opportunity to solve problems and create something beautiful and functional.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8MnwwfHx8MA%3D%3D"  alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎨</div>
+                    <h3 class="skill-title">Design</h3>
+                    <p class="skill-description">UI/UX Design, Visual Identity, Brand Strategy</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-title">Development</h3>
+                    <p class="skill-description">Frontend Development, Responsive Design, Performance</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📱</div>
+                    <h3 class="skill-title">Mobile</h3>
+                    <p class="skill-description">Mobile-First Design, Progressive Web Apps</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🚀</div>
+                    <h3 class="skill-title">Strategy</h3>
+                    <p class="skill-description">Product Strategy, User Research, Analytics</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎯</div>
+                    <h3 class="skill-title">Marketing</h3>
+                    <p class="skill-description">Digital Marketing, SEO, Content Strategy</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">⚡</div>
+                    <h3 class="skill-title">Optimization</h3>
+                    <p class="skill-description">Performance Optimization, A/B Testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1648134859196-3aa762e9440d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RSUyMGNvbW1lcmNlJTIwUGxhdGZvcm18ZW58MHx8MHx8fDA%3D" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View E-commerce Platform project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-commerce Platform</h3>
+                        <p class="portfolio-description">Modern e-commerce solution with seamless user experience and conversion optimization.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1554731617-8eafa9975365?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEUlMjBjb21tZXJjZSUyMFBsYXRmb3JtfGVufDB8fDB8fHww" alt="Fitness Mobile App">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Fitness Mobile App project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Fitness Mobile App</h3>
+                        <p class="portfolio-description">Comprehensive fitness tracking app with personalized workout plans and progress monitoring.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Health</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RSUyMGNvbW1lcmNlJTIwUGxhdGZvcm18ZW58MHx8MHx8fDA%3D" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Brand Identity Design project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Brand Identity Design</h3>
+                        <p class="portfolio-description">Complete brand identity system for a sustainable fashion startup.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Identity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1587382926858-4a0dd19eb252?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEUlMjBjb21tZXJjZSUyMFBsYXRmb3JtfGVufDB8fDB8fHww" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Corporate Website project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Corporate Website</h3>
+                        <p class="portfolio-description">Professional corporate website with focus on credibility and lead generation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Corporate</span>
+                            <span class="tag">CMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1511296933631-18b1a062212c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEUlMjBjb21tZXJjZSUyMFBsYXRmb3JtfGVufDB8fDB8fHww" alt="Food Delivery App">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Food Delivery App project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Food Delivery App</h3>
+                        <p class="portfolio-description">Intuitive food delivery application with real-time tracking and seamless ordering.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Food Tech</span>
+                            <span class="tag">UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1683798464819-d1376249293e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEUlMjBjb21tZXJjZSUyMFBsYXRmb3JtfGVufDB8fDB8fHww" alt="Product Packaging">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" aria-label="View Product Packaging project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Product Packaging</h3>
+                        <p class="portfolio-description">Eco-friendly packaging design that reflects brand values and attracts customers.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Packaging</span>
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">Print</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title fade-in">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Exceptional work quality and attention to detail. The project was delivered on time and exceeded our expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="Sarah Johnson" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-title">CEO, TechStart Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Professional, creative, and reliable. I highly recommend for any design or development project."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww" alt="Michael Chen" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Chen</h4>
+                                <p class="author-title">Marketing Director, GrowthCo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Outstanding communication and project management. The final result was exactly what we envisioned."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29ufGVufDB8fDB8fHww" alt="Emily Rodriguez" class="author-image">
+                            <div class="author-info">
+                                <h4 class="author-name">Emily Rodriguez</h4>
+                                <p class="author-title">Founder, Creative Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="contact-description">
+                        Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@yourname.com" class="contact-link">hello@yourname.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-text">New York, NY</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                        <a href="#" class="social-link" aria-label="Dribbble">Dribbble</a>
+                        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">&copy; 2024 Your Name. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

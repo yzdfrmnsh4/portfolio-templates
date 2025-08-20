@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Comic Portfolio</title>
+    <meta name="description" content="A vibrant comic-book styled portfolio showcasing amazing design work">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1 class="logo-text">[Your Logo]</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="speech-bubble hero-bubble">
+                    <h1 class="hero-title">HELLO! I'M [YOUR NAME]</h1>
+                    <p class="hero-subtitle">A SUPER DESIGNER WITH AMAZING POWERS!</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww" alt="Comic Designer Character" class="character-img">
+                </div>
+                <div class="speech-bubble hero-bubble-2">
+                    <p>Ready to create something AMAZING together?</p>
+                </div>
+            </div>
+            <div class="hero-action">
+                <button class="comic-button btn-primary" onclick="scrollToSection('projects')">
+                    <span>VIEW MY WORK</span>
+                    <i class="fas fa-rocket"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT THE HERO</h2>
+                <div class="comic-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-panel comic-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">MY STORY</h3>
+                    </div>
+                    <div class="panel-content">
+                        <p>I'm a passionate designer with [X] years of experience creating amazing digital experiences. My superpower? Turning complex ideas into beautiful, user-friendly designs!</p>
+                        <p>When I'm not designing, you can find me [your hobbies/interests]. I believe great design should be both functional AND fun!</p>
+                    </div>
+                </div>
+
+                <div class="skills-panel comic-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">SUPER SKILLS</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-badge">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fab fa-adobe"></i>
+                            <span>Adobe CC</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-code"></i>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-palette"></i>
+                            <span>Branding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EPIC PROJECTS</h2>
+                <div class="comic-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card comic-panel">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1617695744007-68ef55752789?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdyYXBoaWMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="Project 1">
+                        <div class="project-overlay">
+                            <button class="comic-button btn-action" onclick="openProject(1)">
+                                <span>POW!</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Title 1</h3>
+                        <p class="project-description">Brief description of your amazing project and the superpowers you used to create it.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card comic-panel">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1584448141569-69f342da535c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9zdGVyfGVufDB8fDB8fHww" alt="Project 2">
+                        <div class="project-overlay">
+                            <button class="comic-button btn-action" onclick="openProject(2)">
+                                <span>ZAP!</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">Another fantastic project showcasing your incredible design abilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card comic-panel">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1580130775562-0ef92da028de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9zdGVyfGVufDB8fDB8fHww" alt="Project 3">
+                        <div class="project-overlay">
+                            <button class="comic-button btn-action" onclick="openProject(3)">
+                                <span>BOOM!</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Title 3</h3>
+                        <p class="project-description">A creative masterpiece that demonstrates your unique design vision.</p>
+                        <div class="project-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Print</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LET'S TEAM UP!</h2>
+                <div class="comic-divider"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info comic-panel">
+                    <div class="speech-bubble contact-bubble">
+                        <h3>Ready for an adventure?</h3>
+                        <p>Let's create something AMAZING together! Drop me a message and let's discuss your next super project.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form comic-panel" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="comic-button btn-primary">
+                        <span>SEND MESSAGE</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-panel comic-panel">
+                    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+                </div>
+                <div class="footer-panel comic-panel">
+                    <p>Made with ❤️ and lots of coffee!</p>
+                </div>
+                <div class="footer-panel comic-panel">
+                    <p>Thanks for visiting my comic universe!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
