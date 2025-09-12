@@ -1,0 +1,215 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.05) 0%, transparent 50%),
+        #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: 'YAZID YAZID YAZID YAZID YAZID YAZID YAZID YAZID YAZID YAZID YAZID YAZID';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    font-size: 8rem;
+    font-weight: 900;
+    color: #ffffff05;
+    z-index: -1;
+    transform: rotate(-15deg);
+    line-height: 1.2;
+    pointer-events: none;
+    white-space: nowrap;
+    animation: float 20s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    body::before {
+        font-size: 4rem;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: rotate(-15deg) translateY(0px); }
+    50% { transform: rotate(-15deg) translateY(-20px); }
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 50%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-n {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #303030, #131313);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    box-shadow: -1px 0px 15px rgba(155, 155, 155, 0.3);
+}
+
+.timeline-line {
+    background: linear-gradient(135deg, #7c7fc6, #06b6d4, #7c7fc6);
+}
+
+.glow-effect {
+    box-shadow: 0 0 20px rgba(120, 119, 198, 0.1);
+}
+
+.section-bg {
+    background: 
+        radial-gradient(circle at 50% 50%, rgba(120, 119, 198, 0.03) 0%, transparent 70%),
+        rgba(17, 24, 39, 0.5);
+}
+
+.backdrop-enhanced {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Improved mobile menu styles */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease-in-out;
+    opacity: 0;
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(0, 0, 0, 0.95));
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    width: 80vw; /* Responsive width */
+    max-width: 320px; /* Maximum width for larger screens */
+    min-width: 240px; /* Minimum width for smaller screens */
+    z-index: 50;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Background overlay when menu is active */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 40;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hamburger icon animation */
+.hamburger {
+    width: 28px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 16px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+/* Mobile menu link styles */
+.mobile-menu a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    font-size: 1.125rem; /* Slightly smaller for smaller screens */
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.mobile-menu a:hover, .mobile-menu a:focus {
+    color: #06b6d4;
+    transform: translateX(8px);
+}
+
+.mobile-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #7c7fc6, #06b6d4);
+    transition: width 0.3s ease;
+}
+
+.mobile-menu a:hover::after, .mobile-menu a:focus::after {
+    width: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .mobile-menu {
+        width: 90vw;
+        min-width: 200px;
+    }
+    .mobile-menu a {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu {
+        width: 100vw;
+        max-width: none;
+    }
+    .mobile-menu a {
+        font-size: 0.875rem;
+    }
+}

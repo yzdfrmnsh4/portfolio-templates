@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazid - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-enhanced">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 border-gray-800 border-b">
+            <div class="flex items-center justify-between">
+                <div class="logo-n animate__animated animate__fadeInDown">Y</div>
+                
+                <!-- Improved hamburger menu button -->
+                <button class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white rounded-md" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#about" class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s">About</a>
+                    <a href="#service" class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s">Service</a>
+                    <a href="#project" class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s">Project</a>
+                    <a href="#contact" class="hover:text-gray-300 transition-colors text-sm lg:text-base animate__animated animate__fadeInDown animate__delay-1s">Contact</a>
+                </div>
+                <div class="hidden md:block text-sm animate__animated animate__fadeInDown animate__delay-1s">
+                    <a href="#contact" class="flex items-center gap-2">
+                        Let's talk
+                        <span class="w-7 h-7 rounded-full border border-gray-300 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right "><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Improved mobile menu -->
+        <div class="mobile-menu fixed top-0 right-0 h-full md:hidden" id="mobile-menu">
+            <div class="flex flex-col h-full px-6 py-8">
+                <button class="self-end text-white mb-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white rounded-md" id="close-menu-btn" aria-label="Close mobile menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="flex-1 flex flex-col justify-center space-y-6">
+                    <a href="#about" class="text-center animate__animated animate__fadeInRight">About</a>
+                    <a href="#service" class="text-center animate__animated animate__fadeInRight animate__delay-1s">Service</a>
+                    <a href="#project" class="text-center animate__animated animate__fadeInRight animate__delay-2s">Project</a>
+                    <a href="#contact" class="text-center animate__animated animate__fadeInRight animate__delay-3s">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay for mobile menu -->
+        <div class="overlay" id="overlay"></div>
+    </nav>
+
+    <!-- Hero Section with improved responsiveness and animations -->
+    <section class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-gray-900/20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
+            <div class="text-center lg:text-left order-2 lg:order-1">
+                <p class="text-gray-400 mb-4 text-sm sm:text-base animate__animated animate__fadeInLeft">Hello Everyone 👋</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text animate__animated animate__zoomIn animate__delay-1s">I am Yazid</h1>
+                <p class="text-gray-300 text-base sm:text-lg mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0 animate__animated animate__fadeInUp animate__delay-2s">
+                    I'm a passionate web developer and designer with expertise in creating modern, 
+                    responsive websites. I specialize in turning ideas into digital experiences 
+                    that engage users and drive business growth.
+                </p>
+                <button class="bg-white text-black px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors glow-effect animate__animated animate__bounceIn animate__delay-3s">
+                    Let's talk
+                </button>
+            </div>
+            <div class="relative flex justify-center lg:justify-end order-1 lg:order-2">
+                <div class="w-64 sm:w-80 md:w-96 h-80 sm:h-96 md:h-[28rem] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden glow-effect animate__animated animate__fadeInRight">
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=400&width=320" 
+                         alt="Yazid" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 space-y-4">
+                    <div class="w-8 sm:w-10 h-8 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInRight animate__delay-1s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </div>
+                    <div class="w-8 sm:w-10 h-8 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInRight animate__delay-2s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <div class="w-8 sm:w-10 h-8 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInRight animate__delay-3s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 sm:py-20 section-bg animate__animated animate__fadeInUp">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <p class="text-gray-400 mb-4">About Me</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">I will help you to develop your business website</h2>
+                </div>
+                <div>
+                    <p class="text-gray-300 leading-relaxed text-center lg:text-left">
+                        With over 5 years of experience in web development, I specialize in creating 
+                        custom websites that not only look great but also perform exceptionally. 
+                        From e-commerce platforms to corporate websites, I bring your vision to life 
+                        with modern technologies and best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="py-16 sm:py-20 relative animate__animated animate__fadeInUp">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-gray-900/10 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center lg:text-left">Specialist Focus Project</h2>
+            <p class="text-gray-400 mb-8 sm:mb-12 max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
+                I focus on three main areas of expertise to deliver exceptional results for your business needs.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="w-12 sm:w-16 h-12 sm:h-16  rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="#ffffff" d="M484.5 168.1C484.3 167 483.8 166 483 165.3C482.2 164.6 481.2 164.1 480.1 164.1C478.1 164.1 442.9 163.3 442.9 163.3C442.9 163.3 421.3 142.5 413.3 134.5L413.3 567.2L539 536C539 536 485 170.5 484.6 168.1zM384.9 134.5C383 128.4 380.6 122.6 377.7 116.9C367.3 96.9 351.7 86 333.3 86C332 86 330.6 86.1 329.3 86.4C328.9 85.6 328.1 85.2 327.7 84.4C319.7 75.6 309.3 71.6 296.9 72C272.9 72.8 248.9 90 229.7 120.8C216.1 142.4 205.7 169.6 202.9 190.9C175.3 199.3 156.1 205.3 155.7 205.7C141.7 210.1 141.3 210.5 139.7 223.7C138.5 233.7 101.7 515.5 101.7 515.5L404.3 568L404.3 129.7C402.8 129.8 401.4 129.9 399.9 130.1C399.9 130.1 394.3 131.7 385.1 134.5zM329.6 151.7C313.6 156.5 296 162.1 278.8 167.3C283.6 148.5 293.2 129.7 304.4 117.3C308.8 112.9 314.8 107.7 321.6 104.5C328.4 118.9 330 138.5 329.6 151.7zM296.8 88.4C301.8 88.2 306.8 89.5 311.2 92C304.8 95.2 298.4 100.4 292.4 106.4C277.2 122.8 265.6 148.4 260.8 172.9C246.4 177.3 232 181.7 218.8 185.7C227.6 147.3 260 89.3 296.8 88.5zM250.4 308.6C252 334.2 319.6 339.8 323.6 400.3C326.4 447.9 298.4 480.4 258 482.8C209.2 486 182.4 457.2 182.4 457.2L192.8 413.2C192.8 413.2 219.6 433.6 241.2 432C255.2 431.2 260.4 419.6 260 411.6C258 378 202.8 380 199.2 324.7C196 278.3 226.4 231.4 293.7 227C319.7 225.4 332.9 231.8 332.9 231.8L317.7 289.4C317.7 289.4 300.5 281.4 280.1 283C250.5 285 250.1 303.8 250.5 308.6zM345.6 146.9C345.6 134.9 344 117.7 338.4 103.3C356.8 106.9 365.6 127.3 369.6 139.7C362.4 141.7 354.4 144.1 345.6 146.9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left">Shopify Theme Development</h3>
+                    <p class="text-gray-400 text-center sm:text-left">Custom Shopify themes tailored to your brand and business needs.</p>
+                </div>
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect animate__animated animate__zoomIn animate__delay-2s">
+                    <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="#ffffff" d="M125.7 233.4L227.2 511.4C156.2 477 107.3 404.2 107.3 320C107.3 289.1 113.9 259.9 125.7 233.4zM463.6 309.3C463.6 283 454.2 264.8 446.1 250.6C435.3 233.1 425.2 218.2 425.2 200.7C425.2 181.1 440 162.9 460.9 162.9C461.8 162.9 462.7 163 463.7 163.1C425.8 128.4 375.4 107.2 320 107.2C245.7 107.2 180.3 145.3 142.2 203.1C147.2 203.3 151.9 203.4 155.9 203.4C178.1 203.4 212.6 200.7 212.6 200.7C224.1 200 225.4 216.9 214 218.2C214 218.2 202.5 219.5 189.7 220.2L267.2 450.6L313.8 311L280.7 220.2C269.2 219.5 258.4 218.2 258.4 218.2C246.9 217.5 248.3 200 259.7 200.7C259.7 200.7 294.8 203.4 315.7 203.4C337.9 203.4 372.4 200.7 372.4 200.7C383.9 200 385.2 216.9 373.8 218.2C373.8 218.2 362.3 219.5 349.5 220.2L426.4 448.9L447.6 378C456.6 348.6 463.6 327.5 463.6 309.3zM323.7 338.6L259.9 524.1C279 529.7 299.1 532.8 320 532.8C344.8 532.8 368.5 528.5 390.6 520.7C390 519.8 389.5 518.8 389.1 517.8L323.7 338.6zM506.7 217.9C507.6 224.7 508.1 231.9 508.1 239.8C508.1 261.4 504.1 285.6 491.9 316L426.9 503.9C490.2 467 532.7 398.5 532.7 320C532.7 283 523.3 248.2 506.7 217.9zM72 320C72 183 183 72 320 72C457 72 568 183 568 320C568 457 457 568 320 568C183 568 72 457 72 320zM556.6 320C556.6 189.3 450.7 83.4 320 83.4C189.3 83.4 83.4 189.3 83.4 320C83.4 450.7 189.3 556.6 320 556.6C450.7 556.6 556.6 450.7 556.6 320z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left">WordPress Theme Development</h3>
+                    <p class="text-gray-400 text-center sm:text-left">Professional WordPress themes with custom functionality.</p>
+                </div>
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-2xl hover:bg-gray-800 transition-colors glow-effect sm:col-span-2 lg:col-span-1 animate__animated animate__zoomIn animate__delay-3s">
+                    <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="#ffffff" d="M568.6 179.8C568.5 179.6 568.4 179.3 568.3 179.1C568.2 178.7 568 178.3 567.8 177.9C567.6 177.7 567.5 177.4 567.3 177.2C567.1 176.9 566.8 176.6 566.6 176.3C566.4 176.1 566.1 175.9 565.8 175.7C565.5 175.5 565.2 175.2 564.9 175L468.6 119.5C467.4 118.8 466 118.4 464.6 118.4C463.2 118.4 461.8 118.8 460.6 119.5L364.3 175C364 175.2 363.7 175.4 363.4 175.7C363.1 175.9 362.9 176.1 362.6 176.3C362.3 176.6 362.1 176.9 361.9 177.2C361.7 177.4 361.5 177.6 361.4 177.9C361.2 178.3 361 178.7 360.9 179.1C360.8 179.3 360.7 179.5 360.6 179.8C360.4 180.5 360.3 181.2 360.3 181.9L360.3 287.1L280.1 333.3L280.1 127.4C280.1 126.7 280 126 279.8 125.3C279.7 125.1 279.6 124.9 279.5 124.6C279.4 124.2 279.2 123.8 279 123.4C278.9 123.1 278.6 122.9 278.5 122.7C278.3 122.4 278 122.1 277.8 121.8C277.6 121.6 277.3 121.4 277 121.2C276.7 121 276.4 120.7 276.1 120.5L179.8 65.1C178.6 64.4 177.2 64 175.8 64C174.4 64 173 64.4 171.8 65.1L75.5 120.5C75.2 120.7 74.9 120.9 74.6 121.2C74.3 121.4 74.1 121.6 73.8 121.8C73.5 122.1 73.3 122.4 73.1 122.7C72.9 123 72.7 123.2 72.5 123.4C72.3 123.8 72.1 124.2 72 124.6C71.9 124.8 71.8 125 71.7 125.3C71.5 126 71.4 126.7 71.4 127.4L71.4 457.1C71.4 458.5 71.8 459.9 72.5 461.1C73.2 462.3 74.2 463.3 75.4 464L268 574.9C268.4 575.1 268.9 575.3 269.3 575.4C269.5 575.5 269.7 575.6 269.9 575.7C271.2 576.1 272.7 576.1 274 575.7C274.2 575.6 274.4 575.5 274.6 575.5C275.1 575.3 275.6 575.2 276 574.9L468.6 464.1C469.8 463.4 470.8 462.4 471.5 461.2C472.2 460 472.6 458.6 472.6 457.2L472.6 351.9L564.8 298.8C566 298.1 567 297.1 567.7 295.8C568.4 294.5 568.8 293.2 568.8 291.8L568.8 182C568.8 181.3 568.7 180.6 568.6 179.9zM175.8 81.3L256 127.4L175.8 173.6L95.6 127.4L175.8 81.2zM264 141.3L264 342.6C230.8 361.7 204.1 377.1 183.8 388.8L183.8 187.5C217 168.4 243.7 153 264 141.3zM264 554.1L87.5 452.5L87.5 141.3C107.8 153 134.6 168.4 167.7 187.5L167.7 402.7C167.7 403 167.8 403.3 167.8 403.6C167.8 404 167.9 404.4 168 404.8C168.1 405.1 168.2 405.4 168.4 405.7C168.5 406 168.7 406.4 168.8 406.7C169 407 169.2 407.2 169.4 407.5C169.6 407.8 169.8 408.1 170.1 408.3C170.3 408.5 170.6 408.7 170.9 408.9C171.2 409.1 171.5 409.4 171.8 409.6L264 461.8L264.1 554.2zM272 447.9L192 402.6C246.7 371.1 305.5 337.3 368.3 301.1L448.4 347.2C419 364 360.2 397.5 272 447.9zM456.5 452.5L280 554.1L280 461.8C381.4 404 440.2 370.4 456.5 361L456.5 452.4zM456.5 333.4C436.2 321.8 409.4 306.4 376.3 287.3L376.3 195.9C396.6 207.6 423.4 223 456.5 242.1L456.5 333.4zM464.5 228.1L384.3 181.9L464.5 135.7L544.7 181.8L464.5 228zM472.5 333.4L472.5 242.1C505.7 223 532.5 207.6 552.8 195.9L552.8 287.3L472.5 333.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center sm:text-left">Laravel Theme Development</h3>
+                    <p class="text-gray-400 text-center sm:text-left">Robust Laravel applications with modern UI/UX design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 section-bg animate__animated animate__fadeInUp">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4 text-center">The experience that made</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center">Me who I am today</h2>
+            <div class="relative">
+                <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-1 h-full rounded-full"></div>
+                <div class="space-y-12">
+                    <div class="flex items-center justify-between animate__animated animate__fadeInLeft">
+                        <div class="w-5/12 text-right">
+                            <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                                <h4 class="font-semibold">Founder & Project</h4>
+                                <p class="text-gray-400">2020 - Present</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+                        <div class="w-5/12"></div>
+                    </div>
+                    <div class="flex items-center justify-between animate__animated animate__fadeInRight">
+                        <div class="w-5/12"></div>
+                        <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+                        <div class="w-5/12">
+                            <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                                <h4 class="font-semibold">WordPress Theme Developer</h4>
+                                <p class="text-gray-400">2019 - 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between animate__animated animate__fadeInLeft">
+                        <div class="w-5/12 text-right">
+                            <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                                <h4 class="font-semibold">Freelance Shopify Developer</h4>
+                                <p class="text-gray-400">2018 - 2019</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+                        <div class="w-5/12"></div>
+                    </div>
+                    <div class="flex items-center justify-between animate__animated animate__fadeInRight">
+                        <div class="w-5/12"></div>
+                        <div class="w-4 h-4 bg-white rounded-full relative z-10"></div>
+                        <div class="w-5/12">
+                            <div class="bg-gray-800 p-4 rounded-lg glow-effect">
+                                <h4 class="font-semibold">Web Engineer</h4>
+                                <p class="text-gray-400">2017 - 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 relative animate__animated animate__fadeInUp">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 w-32 h-32 border border-white rounded-full animate__animated animate__pulse animate__infinite"></div>
+            <div class="absolute bottom-20 right-10 w-24 h-24 border border-white rounded-full animate__animated animate__pulse animate__infinite animate__delay-2s"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 border border-white rounded-full animate__animated animate__pulse animate__infinite animate__delay-1s"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold mb-12">Skills that I have Mastered</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl">
+                Over the years, I have developed expertise in various technologies and frameworks 
+                that enable me to create exceptional web experiences.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-1s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="#ffffff" d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"/>
+                    </svg>
+                </div>
+                <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-2s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="#ffffff" d="M482.2 241.2C476.8 239.4 471.4 237.7 466 236.1C466.9 232.4 467.7 228.7 468.5 225C480.8 165.4 472.7 117.5 445.4 101.7C419.1 86.6 376.2 102.3 332.8 140.1C328.5 143.8 324.3 147.7 320.3 151.6C317.6 149 314.8 146.4 312 143.9C266.5 103.5 220.9 86.5 193.6 102.4C167.4 117.6 159.6 162.7 170.6 219.1C171.7 224.7 172.9 230.2 174.3 235.8C167.9 237.6 161.6 239.6 155.7 241.7C102.3 260.2 64 289.4 64 319.6C64 350.8 104.8 382.1 160.3 401.1C164.8 402.6 169.3 404.1 173.9 405.4C172.4 411.4 171.1 417.3 169.9 423.4C159.4 478.9 167.6 522.9 193.8 538C220.8 553.6 266.2 537.6 310.4 498.9C313.9 495.8 317.4 492.6 320.9 489.2C325.3 493.5 329.9 497.6 334.5 501.6C377.3 538.4 419.6 553.3 445.7 538.2C472.7 522.6 481.5 475.3 470.1 417.7C469.2 413.3 468.2 408.8 467.1 404.2C470.3 403.3 473.4 402.3 476.5 401.3C534.2 382.2 576 351.3 576 319.6C576 289.3 536.6 259.9 482.2 241.2zM346.9 156.3C384.1 123.9 418.8 111.2 434.6 120.3C451.5 130 458 169.2 447.4 220.7C446.7 224.1 446 227.4 445.1 230.7C422.9 225.7 400.4 222.1 377.8 220.1C364.8 201.5 350.6 183.7 335.2 167C339.1 163.3 342.9 159.8 346.9 156.3zM231.2 371.5C236.3 380.2 241.5 388.9 247 397.4C231.4 395.7 215.9 393.2 200.6 389.9C205 375.5 210.5 360.6 216.9 345.4C221.5 354.2 226.2 362.9 231.2 371.5zM200.9 251.2C215.3 248 230.6 245.4 246.5 243.4C241.2 251.7 236 260.2 231.1 268.8C226.2 277.3 221.4 286 216.9 294.8C210.6 279.9 205.3 265.3 200.9 251.2zM228.3 320.1C234.9 306.3 242.1 292.8 249.7 279.5C257.3 266.2 265.5 253.3 274.1 240.6C289.1 239.5 304.4 238.9 320 238.9C335.6 238.9 351 239.5 365.9 240.6C374.4 253.2 382.5 266.1 390.2 279.3C397.9 292.5 405.1 306 411.9 319.7C405.2 333.5 398 347.1 390.3 360.5C382.7 373.8 374.6 386.7 366.1 399.5C351.2 400.6 335.7 401.1 320 401.1C304.3 401.1 289.1 400.6 274.4 399.7C265.7 387 257.5 374 249.8 360.7C242.1 347.4 235 333.9 228.3 320.1zM408.9 371.3C414 362.5 418.8 353.6 423.5 344.6C429.9 359.1 435.5 373.8 440.4 388.9C424.9 392.4 409.2 395.1 393.4 396.9C398.8 388.5 403.9 379.9 408.9 371.3zM423.3 294.8C418.6 286 413.8 277.2 408.8 268.6C403.9 260.1 398.8 251.7 393.5 243.4C409.6 245.4 425 248.1 439.4 251.4C434.8 266.2 429.4 280.6 423.3 294.8zM320.2 182.3C330.7 193.7 340.6 205.7 349.8 218.1C330 217.2 310.1 217.2 290.3 218.1C300.1 205.2 310.2 193.2 320.2 182.3zM204.2 121C221 111.2 258.3 125.2 297.6 160C300.1 162.2 302.6 164.6 305.2 167C289.7 183.7 275.4 201.5 262.3 220.1C239.7 222.1 217.3 225.6 195.1 230.5C193.8 225.4 192.7 220.2 191.6 215C182.2 166.6 188.4 130.1 204.2 121zM179.7 384.6C175.5 383.4 171.4 382.1 167.3 380.7C146 374 121.8 363.4 104.3 349.5C94.2 342.5 87.4 331.7 85.5 319.6C85.5 301.3 117.1 277.9 162.7 262C168.4 260 174.2 258.2 180 256.5C186.8 278.2 195 299.5 204.5 320.1C194.9 341 186.6 362.6 179.7 384.6zM296.3 482.6C279.8 497.7 260.7 509.7 239.9 517.9C228.8 523.2 216 523.7 204.6 519.2C188.7 510 182.1 474.7 191.1 427.2C192.2 421.6 193.4 416 194.8 410.5C217.2 415.3 239.8 418.6 262.7 420.3C275.9 439 290.4 456.9 305.9 473.7C302.7 476.8 299.5 479.8 296.3 482.6zM320.8 458.3C310.6 447.3 300.4 435.1 290.5 422C300.1 422.4 310 422.6 320 422.6C330.3 422.6 340.4 422.4 350.4 421.9C341.2 434.6 331.3 446.7 320.8 458.3zM451.5 488.3C450.6 500.5 444.6 511.9 435 519.6C419.1 528.8 385.2 516.8 348.6 485.4C344.4 481.8 340.2 477.9 335.9 473.9C351.2 457 365.3 439.1 378.1 420.3C401 418.4 423.8 414.9 446.3 409.8C447.3 413.9 448.2 418 449 422C453.9 443.6 454.7 466.1 451.5 488.3zM469.7 380.8C466.9 381.7 464.1 382.6 461.2 383.4C454.2 361.6 445.6 340.3 435.7 319.6C445.3 299.2 453.4 278.2 460.2 256.7C465.4 258.2 470.4 259.8 475.2 261.4C521.8 277.4 554.5 301.2 554.5 319.4C554.5 339 519.6 364.3 469.7 380.8zM320 365.8C345.3 365.8 365.8 345.3 365.8 320C365.8 294.7 345.3 274.2 320 274.2C294.7 274.2 274.2 294.7 274.2 320C274.2 345.3 294.7 365.8 320 365.8z"/>
+                    </svg>
+                </div>
+                <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-3s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="#ffffff" d="M544 96L480 464L256.7 544L64 464L83.6 369.2L165.6 369.2L157.6 409.8L274 454.2L408.1 409.8L426.9 312.7L93.5 312.7L109.5 230.7L443.2 230.7L453.7 178L120.3 178L136.6 96L544 96z"/>
+                    </svg>
+                </div>
+                <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-4s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="#ffffff" d="M568.6 179.8C568.5 179.6 568.4 179.3 568.3 179.1C568.2 178.7 568 178.3 567.8 177.9C567.6 177.7 567.5 177.4 567.3 177.2C567.1 176.9 566.8 176.6 566.6 176.3C566.4 176.1 566.1 175.9 565.8 175.7C565.5 175.5 565.2 175.2 564.9 175L468.6 119.5C467.4 118.8 466 118.4 464.6 118.4C463.2 118.4 461.8 118.8 460.6 119.5L364.3 175C364 175.2 363.7 175.4 363.4 175.7C363.1 175.9 362.9 176.1 362.6 176.3C362.3 176.6 362.1 176.9 361.9 177.2C361.7 177.4 361.5 177.6 361.4 177.9C361.2 178.3 361 178.7 360.9 179.1C360.8 179.3 360.7 179.5 360.6 179.8C360.4 180.5 360.3 181.2 360.3 181.9L360.3 287.1L280.1 333.3L280.1 127.4C280.1 126.7 280 126 279.8 125.3C279.7 125.1 279.6 124.9 279.5 124.6C279.4 124.2 279.2 123.8 279 123.4C278.9 123.1 278.6 122.9 278.5 122.7C278.3 122.4 278 122.1 277.8 121.8C277.6 121.6 277.3 121.4 277 121.2C276.7 121 276.4 120.7 276.1 120.5L179.8 65.1C178.6 64.4 177.2 64 175.8 64C174.4 64 173 64.4 171.8 65.1L75.5 120.5C75.2 120.7 74.9 120.9 74.6 121.2C74.3 121.4 74.1 121.6 73.8 121.8C73.5 122.1 73.3 122.4 73.1 122.7C72.9 123 72.7 123.2 72.5 123.4C72.3 123.8 72.1 124.2 72 124.6C71.9 124.8 71.8 125 71.7 125.3C71.5 126 71.4 126.7 71.4 127.4L71.4 457.1C71.4 458.5 71.8 459.9 72.5 461.1C73.2 462.3 74.2 463.3 75.4 464L268 574.9C268.4 575.1 268.9 575.3 269.3 575.4C269.5 575.5 269.7 575.6 269.9 575.7C271.2 576.1 272.7 576.1 274 575.7C274.2 575.6 274.4 575.5 274.6 575.5C275.1 575.3 275.6 575.2 276 574.9L468.6 464.1C469.8 463.4 470.8 462.4 471.5 461.2C472.2 460 472.6 458.6 472.6 457.2L472.6 351.9L564.8 298.8C566 298.1 567 297.1 567.7 295.8C568.4 294.5 568.8 293.2 568.8 291.8L568.8 182C568.8 181.3 568.7 180.6 568.6 179.9zM175.8 81.3L256 127.4L175.8 173.6L95.6 127.4L175.8 81.2zM264 141.3L264 342.6C230.8 361.7 204.1 377.1 183.8 388.8L183.8 187.5C217 168.4 243.7 153 264 141.3zM264 554.1L87.5 452.5L87.5 141.3C107.8 153 134.6 168.4 167.7 187.5L167.7 402.7C167.7 403 167.8 403.3 167.8 403.6C167.8 404 167.9 404.4 168 404.8C168.1 405.1 168.2 405.4 168.4 405.7C168.5 406 168.7 406.4 168.8 406.7C169 407 169.2 407.2 169.4 407.5C169.6 407.8 169.8 408.1 170.1 408.3C170.3 408.5 170.6 408.7 170.9 408.9C171.2 409.1 171.5 409.4 171.8 409.6L264 461.8L264.1 554.2zM272 447.9L192 402.6C246.7 371.1 305.5 337.3 368.3 301.1L448.4 347.2C419 364 360.2 397.5 272 447.9zM456.5 452.5L280 554.1L280 461.8C381.4 404 440.2 370.4 456.5 361L456.5 452.4zM456.5 333.4C436.2 321.8 409.4 306.4 376.3 287.3L376.3 195.9C396.6 207.6 423.4 223 456.5 242.1L456.5 333.4zM464.5 228.1L384.3 181.9L464.5 135.7L544.7 181.8L464.5 228zM472.5 333.4L472.5 242.1C505.7 223 532.5 207.6 552.8 195.9L552.8 287.3L472.5 333.5z"/>
+                    </svg>
+                </div>
+                <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors glow-effect p-4 border border-white animate__animated animate__flipInX animate__delay-5s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path fill="#ffffff" d="M320 168.5C491.4 168.5 623.2 240.7 623.2 320C623.2 399.3 491.3 471.5 320 471.5C148.6 471.5 16.8 399.3 16.8 320C16.8 240.7 148.7 168.5 320 168.5zM320 151.7C143.3 151.7 0 227 0 320C0 413 143.3 488.3 320 488.3C496.7 488.3 640 413 640 320C640 227 496.7 151.7 320 151.7zM218.2 306.5C210.3 347 182.4 342.8 148.1 342.8L161.8 272.2C199.8 272.2 225.6 268.1 218.2 306.5zM97.4 414.3L134.1 414.3L142.8 369.5C183.9 369.5 209.4 372.5 233 350.4C259.1 326.4 265.9 283.7 247.3 262.3C237.6 251.1 222 245.6 200.8 245.6L130.1 245.6L97.4 414.3zM283.1 200.7L319.6 200.7L310.9 245.5C342.4 245.5 371.6 243.2 385.7 256.2C400.5 269.8 393.4 287.2 377.4 369.3L340.4 369.3C355.8 289.9 358.7 283.3 353.1 277.3C347.7 271.5 335.4 272.7 305.7 272.7L286.9 369.3L250.4 369.3L283.1 200.7zM505 306.5C497 347.6 468.3 342.8 434.9 342.8L448.6 272.2C486.8 272.2 512.4 268.1 505 306.5zM384.2 414.3L421 414.3L429.7 369.5C472.9 369.5 496.8 372 519.9 350.4C546 326.4 552.8 283.7 534.2 262.3C524.5 251.1 508.9 245.6 487.7 245.6L417 245.6L384.2 414.3z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="py-16 sm:py-20 section-bg animate__animated animate__fadeInUp">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Project Work</h2>
+                    <p class="text-gray-400">
+                        Here are some of my recent projects that showcase my skills and expertise.
+                    </p>
+                </div>
+                <button class="text-white hover:text-gray-300 transition-colors whitespace-nowrap">
+                    See More Work →
+                </button>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6 lg:gap-8">
+                <div class="group cursor-pointer animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80">
+                        <img src="https://cdn.dribbble.com/userupload/44789827/file/f50e350b0b38afd4cdfff1cba7b1b629.jpg?resize=1024x768&vertical=center?height=300&width=500" 
+                             alt="CMS Center For Migration Studies" class="w-full  object-cover">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold">CMS | Center For Migration Studies</h3>
+                </div>
+                <div class="group cursor-pointer animate__animated animate__zoomIn animate__delay-2s">
+                    <div class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80">
+                        <img src="https://cdn.dribbble.com/userupload/44876521/file/8cc8ef08c6de49e7dd6d4f3bdbdb6d6a.png?resize=1024x576&vertical=center?height=300&width=500" 
+                             alt="Voces de la Frontera" class="w-full  object-cover">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold">Voces de la Frontera</h3>
+                </div>
+                <div class="group cursor-pointer animate__animated animate__zoomIn animate__delay-3s">
+                    <div class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80">
+                        <img src="https://cdn.dribbble.com/userupload/44879469/file/b8343bb6aed44c1ef15084280a6bd93d.png?resize=1024x768&vertical=center?height=300&width=500" 
+                             alt="ITPI In The Public Interest" class="w-full  object-cover">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold">ITPI | In The Public Interest</h3>
+                </div>
+                <div class="group cursor-pointer animate__animated animate__zoomIn animate__delay-4s">
+                    <div class="bg-gray-800 rounded-md overflow-hidden mb-4 hover:transform hover:scale-105 transition-transform glow-effect h-80">
+                        <img src="https://cdn.dribbble.com/userupload/44879469/file/b8343bb6aed44c1ef15084280a6bd93d.png?resize=1024x768&vertical=center?height=300&width=500" 
+                             alt="CHANGEWIRE" class="w-full  object-cover">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold">CHANGEWIRE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-20 relative animate__animated animate__fadeInUp">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Just say hello</h2>
+            <p class="text-gray-400 text-center mb-8 sm:mb-12">
+                Ready to start your project? I would love to hear from you. Let's discuss how we can bring your ideas to life.
+            </p>
+            <form class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6 animate__animated animate__fadeInLeft">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect">
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6 animate__animated animate__fadeInRight">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Project Name</label>
+                        <input type="text" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Your Budget</label>
+                        <select class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect">
+                            <option>Select Budget Range</option>
+                            <option>$1,000 - $5,000</option>
+                            <option>$5,000 - $10,000</option>
+                            <option>$10,000+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeInUp">
+                    <label class="block text-sm font-medium mb-2">Description</label>
+                    <textarea rows="6" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-white transition-colors glow-effect" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <div class="text-center animate__animated animate__bounceIn">
+                    <button type="submit" class="bg-white text-black px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors glow-effect">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-8 sm:py-12 border-t border-gray-800 animate__animated animate__fadeInUp">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm sm:text-base">© 2024 Yazid. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <div class="w-9 h-9  rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-1s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    </div>
+                    <div class="w-9 h-9  rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-2s">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </div>
+                    <div class="w-9 h-9  rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-3s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </div>
+                    <div class="w-9 h-9  rounded-full border border-white flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer animate__animated animate__fadeInUp animate__delay-4s">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
