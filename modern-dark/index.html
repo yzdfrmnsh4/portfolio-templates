@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaziddev - Portfolio</title>
+    
+     <!-- Tailwind CSS CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+     <!-- AOS Animation Library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+     <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background-color: #FFD700;
+            color: #000000;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFA500;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #FFD700;
+        }
+        
+        .card-dark {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .card-dark:hover {
+            border-color: #FFD700;
+            transform: translateY(-4px);
+        }
+        
+        .star-rating {
+            color: #FFD700;
+        }
+        
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- Navigation  -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-yellow-400 rounded flex items-center justify-center">
+                        <span class="text-black font-bold text-sm">YZ</span>
+                    </div>
+                    <span class="text-white font-semibold">Portfolio</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">HOME</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#services" class="nav-link">SERVICES</a>
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </div>
+                
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section  -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">FREELANCER</p>
+                    <h1 class="section-title mb-6">
+                        YourName
+                    </h1>
+                    <div class="flex flex-wrap gap-4 mb-8 text-sm text-gray-400">
+                        <span>UI/UX DESIGN</span>
+                        <span>•</span>
+                        <span>WEB DESIGN</span>
+                        <span>•</span>
+                        <span>DEVELOPMENT</span>
+                        <span>•</span>
+                        <span>WEB DESIGN</span>
+                    </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed max-w-xl">
+                        Welcome to my portfolio! I'm a passionate UI/UX designer with a keen eye for creating intuitive and visually stunning digital experiences. With years of experience in the field, I specialize in crafting user-centered designs that not only look great but also enhance usability and drive results.
+                    </p>
+                    <button class="btn-primary">DOWNLOAD MY CV</button>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-12">
+                        <div class="card-dark">
+                            <div class="flex items-center space-x-1 mb-2">
+                                <span class="star-rating">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-400">5 Star Rating</p>
+                        </div>
+                        <div class="card-dark">
+                            <div class="flex items-center space-x-1 mb-2">
+                                <span class="star-rating">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Upwork</p>
+                        </div>
+                        <div class="card-dark">
+                            <div class="flex items-center space-x-1 mb-2">
+                                <span class="star-rating">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Fiverr</p>
+                        </div>
+                        <div class="card-dark">
+                            <div class="flex items-center space-x-1 mb-2">
+                                <span class="star-rating">★★★★★</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=500&width=400" alt="Yaziddev" class="rounded-lg w-full max-w-md h-[500px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section with LuminUp  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">01. About Me</p>
+                    <h2 class="section-title mb-6">
+                        UI/UX Designer &<br>
+                        Web Developer
+                    </h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        I'm a passionate UI/UX designer and web developer dedicated to creating seamless digital experiences. With expertise in both design and development, I bridge the gap between aesthetics and functionality.
+                    </p>
+                    <button class="btn-primary">LEARN MORE</button>
+                </div>
+                
+                <div data-aos="fade-left" class="relative">
+                    <div class="card-dark p-12">
+                        <div class="text-6xl font-bold mb-4 gradient-text">LuminUp</div>
+                        <p class="text-gray-400 text-sm">Featured Project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Me Detail Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=600&width=500" alt="About Me" class="rounded-lg w-full h-[500px] object-cover">
+                </div>
+                
+                <div data-aos="fade-left" class="order-1 md:order-2">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">02. About Me</p>
+                    <h2 class="section-title mb-6">
+                        Passionate & Lead<br>
+                        Product Designer
+                    </h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        With over 8 years of experience in product design, I've helped numerous companies transform their digital presence. My approach combines user research, creative problem-solving, and technical expertise to deliver exceptional results.
+                    </p>
+                    <button class="btn-primary">HIRE ME NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Experience Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">03. Experience</p>
+                    <h2 class="text-4xl font-bold mb-8">My Work Experience</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">UI/UX Designer</h3>
+                                <p class="text-gray-400 text-sm">Company Name</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2020-2023</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Product Designer</h3>
+                                <p class="text-gray-400 text-sm">Tech Startup</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2018-2020</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Senior UX Designer</h3>
+                                <p class="text-gray-400 text-sm">Digital Agency</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2016-2018</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">04. Education</p>
+                    <h2 class="text-4xl font-bold mb-8">My Education</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">BSc in CSE</h3>
+                                <p class="text-gray-400 text-sm">University Name</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2012-2016</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Diploma in Web Design</h3>
+                                <p class="text-gray-400 text-sm">Design Institute</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2011-2012</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Branding Course</h3>
+                                <p class="text-gray-400 text-sm">Online Academy</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Services Section  -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12" data-aos="fade-up">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">05. Services</p>
+                <h2 class="section-title mb-4">
+                    Experience the Impact of<br>
+                    User-Centered Design
+                </h2>
+                <p class="text-gray-400 max-w-2xl">
+                    I offer comprehensive design services that focus on creating meaningful user experiences and driving business results.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-dark" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">UI/UX Design</h3>
+                        <span class="text-yellow-400 text-3xl">→</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Creating intuitive and engaging user interfaces that delight users and drive conversions.</p>
+                </div>
+                
+                <div class="card-dark" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Web Development</h3>
+                        <span class="text-yellow-400 text-3xl">→</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Building responsive and performant websites using modern technologies and best practices.</p>
+                </div>
+                
+                <div class="card-dark" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Branding</h3>
+                        <span class="text-yellow-400 text-3xl">→</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Developing strong brand identities that resonate with your target audience.</p>
+                </div>
+                
+                <div class="card-dark" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Animation Design</h3>
+                        <span class="text-yellow-400 text-3xl">→</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Creating smooth animations and micro-interactions that enhance user experience.</p>
+                </div>
+                
+                <div class="card-dark" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Product Design</h3>
+                        <span class="text-yellow-400 text-3xl">→</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">End-to-end product design from concept to launch, ensuring market success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Portfolio Section  -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12" data-aos="fade-up">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">06. Recent Work</p>
+                <h2 class="section-title mb-4">
+                    Showcasing My Work for<br>
+                    Your Inspiration
+                </h2>
+                <p class="text-gray-400 max-w-2xl">
+                    Explore my latest projects and see how I've helped clients achieve their goals through thoughtful design and development.
+                </p>
+                <button class="btn-primary mt-6">VIEW ALL PROJECTS</button>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-dark group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://cdn.dribbble.com/userupload/18110383/file/original-3cb42fe5845f95f01c42980b7b339993.jpg?resize=1024x768&vertical=center?height=300&width=500" alt="Website Redesign" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Website Redesign</h3>
+                    <p class="text-gray-400 text-sm">Complete redesign of a corporate website with focus on user experience</p>
+                </div>
+                
+                <div class="card-dark group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://cdn.dribbble.com/userupload/10465986/file/original-81b0e42b2f7498f703a470c487ab4880.png?resize=1024x768&vertical=center?height=300&width=500" alt="Branding Identity Design" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Branding Identity Design</h3>
+                    <p class="text-gray-400 text-sm">Complete brand identity system for a tech startup</p>
+                </div>
+                
+                <div class="card-dark group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://cdn.dribbble.com/userupload/17852286/file/original-05936230768433331c75ef50085ff1dc.png?resize=1024x768&vertical=center?height=300&width=500" alt="Creative Hub Website" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Creative Hub Website</h3>
+                    <p class="text-gray-400 text-sm">Modern portfolio website for creative professionals</p>
+                </div>
+                
+                <div class="card-dark group cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://cdn.dribbble.com/userupload/20221965/file/original-d6cd74f25eca8f9bf59489814c96b145.png?resize=1024x768&vertical=center?height=300&width=500" alt="Mobile App NFP Design" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Mobile App NFP Design</h3>
+                    <p class="text-gray-400 text-sm">User-friendly mobile app design for non-profit organization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Testimonials Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=80&width=80" alt="Client" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">Trusted by 100+ Satisfied Clients</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-dark" data-aos="fade-right">
+                    <div class="flex items-center mb-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1723770023600-8083358720aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=50&width=50" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">John Anderson</h4>
+                            <p class="text-gray-400 text-sm">CEO, Tech Corp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"David's work exceeded our expectations. His attention to detail and creative approach transformed our digital presence completely."</p>
+                    <div class="flex items-center mt-4">
+                        <span class="star-rating">★★★★★</span>
+                    </div>
+                </div>
+                
+                <div class="card-dark" data-aos="fade-left">
+                    <div class="flex items-center mb-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1694557636097-5969bae91ba8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d29tYW58ZW58MHx8MHx8fDA%3D?height=50&width=50" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Sarah Williams</h4>
+                            <p class="text-gray-400 text-sm">Founder, StartupXYZ</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Working with David was a game-changer for our startup. His designs are not only beautiful but also highly functional."</p>
+                    <div class="flex items-center mt-4">
+                        <span class="star-rating">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- FAQ Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12" data-aos="fade-up">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">07. FAQs</p>
+                <h2 class="section-title mb-4">
+                    Frequently Asked<br>
+                    Questions
+                </h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="card-dark cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">What services do you offer?</h3>
+                        <span class="text-yellow-400 text-2xl">+</span>
+                    </div>
+                </div>
+                
+                <div class="card-dark cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">How long does a typical project take?</h3>
+                        <span class="text-yellow-400 text-2xl">+</span>
+                    </div>
+                </div>
+                
+                <div class="card-dark cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">What is your design process?</h3>
+                        <span class="text-yellow-400 text-2xl">+</span>
+                    </div>
+                </div>
+                
+                <div class="card-dark cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold">Do you work with clients remotely?</h3>
+                        <span class="text-yellow-400 text-2xl">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- CTA Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center" data-aos="zoom-in">
+            <h2 class="section-title mb-6">
+                Surround yourself<br>
+                with an expert
+            </h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                Ready to transform your digital presence? Let's work together to create something amazing.
+            </p>
+            <button class="btn-primary">LET'S WORK TOGETHER</button>
+        </div>
+    </section>
+
+     <!-- Footer  -->
+    <footer id="contact" class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-yellow-400 rounded flex items-center justify-center">
+                            <span class="text-black font-bold text-sm">YZ</span>
+                        </div>
+                        <span class="text-white font-semibold">Portfolio</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Creating exceptional digital experiences through design and development.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                        <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>UI/UX Design</li>
+                        <li>Web Development</li>
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>david@example.com</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>New York, USA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Yaziddev. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
